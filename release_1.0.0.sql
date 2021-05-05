@@ -13,7 +13,7 @@ CREATE TABLE salesTableZ (
 CREATE TABLE CustomerInfo (CustomerTypeID nchar(10) NOT NULL, CustomerDesc nvarchar(MAX))
 --rollback DROP TABLE CustomerInfo
  
---changeset Martha:addPrimaryKey_pk_CustomerTypeID context=PROD labels=Jira1002
+--changeset Martha:addPrimaryKey_pk_CustomerTypeID context:PROD labels:Jira1002
 ALTER TABLE CustomerInfo ADD CONSTRAINT pk_CustomerTypeID PRIMARY KEY (CustomerTypeID)
 --rollback ALTER TABLE CustomerInfo DROP CONSTRAINT pk_CustomerTypeID
  
